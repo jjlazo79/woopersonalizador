@@ -1,0 +1,8 @@
+<wpml-config>
+    <custom-fields>
+        <custom-field action="copy">jckpc_enabled</custom-field>
+        <custom-field action="copy">jckpc_sort_order</custom-field>
+        <custom-field action="copy">jckpc_images</custom-field>
+        <custom-field action="copy">jckpc_defaults</custom-field>
+    </custom-fields>
+</wpml-config>

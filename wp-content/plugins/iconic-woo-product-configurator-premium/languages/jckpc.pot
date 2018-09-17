@@ -1,0 +1,416 @@
+# Copyright (C) 2018 iconic-woo-product-configurator
+# This file is distributed under the same license as the iconic-woo-product-configurator package.
+msgid ""
+msgstr ""
+"Project-Id-Version: iconic-woo-product-configurator\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: iconic-woo-product-configurator.php:343
+msgid "Configurator"
+msgstr ""
+
+#: iconic-woo-product-configurator.php:382
+msgid "Before you can manage the configurator layers you need to add some variations on the <strong>Variations</strong> tab. Once you're done, refresh the page."
+msgstr ""
+
+#: iconic-woo-product-configurator.php:425
+msgid "Background Image"
+msgstr ""
+
+#: iconic-woo-product-configurator.php:433, inc/partials/meta-attribute-layer.php:52, inc/partials/meta-static-layer.php:40
+msgid "Image"
+msgstr ""
+
+#: iconic-woo-product-configurator.php:440
+msgid "Set background image"
+msgstr ""
+
+#: iconic-woo-product-configurator.php:441, inc/partials/meta-attribute-layer.php:76
+msgid "Set Image"
+msgstr ""
+
+#: iconic-woo-product-configurator.php:442, inc/partials/meta-attribute-layer.php:77, inc/partials/meta-static-layer.php:53
+msgid "Add Image"
+msgstr ""
+
+#: iconic-woo-product-configurator.php:550
+msgid "You must add a background image in the configurator tab."
+msgstr ""
+
+#: iconic-woo-product-configurator.php:638, inc/partials/meta-static-layer.php:52
+msgid "Remove Image"
+msgstr ""
+
+#: iconic-woo-product-configurator.php:1165
+msgid "Please upload a PNG image."
+msgstr ""
+
+#: iconic-woo-product-configurator.php:1439
+msgid "Default Image"
+msgstr ""
+
+#: iconic-woo-product-configurator.php:1534
+msgid "Sorry, an issue occurred when attaching the image you selected. Please try again."
+msgstr ""
+
+#: inc/class-core-cross-sells.php:69
+msgid "Display individual product variations of a variable product in your product listings. Make it easy for your customers to view and filter product variations."
+msgstr ""
+
+#: inc/class-core-cross-sells.php:80
+msgid "Enable zoom, sliders, video, fullscreen, multiple images per variation, and customisable layout options for your product imagery."
+msgstr ""
+
+#: inc/class-core-cross-sells.php:91
+msgid "Choose a delivery date and time for each order. Add a limit to the number of allowed reservations, restrict time slots to specific delivery methods, and so much more."
+msgstr ""
+
+#: inc/class-core-cross-sells.php:102
+msgid "Link a group of WooCommerce products together by their attributes; a new way to handle product variations."
+msgstr ""
+
+#: inc/class-core-cross-sells.php:113
+msgid "Use transparent image layers for your variable products, removing the need to create hundreds of final product variation images."
+msgstr ""
+
+#: inc/class-core-cross-sells.php:124
+msgid "A modern take on quick view for WooCommerce; expand product details within your product listings for a convenient shopping experience."
+msgstr ""
+
+#: inc/class-core-cross-sells.php:131
+msgid "Add and manage pages in your WooCommerce \"My Account\" area using the native WordPress \"Pages\" functionality."
+msgstr ""
+
+#: inc/class-core-cross-sells.php:138
+msgid "Quickly view any product from the catalog, without reloading the page. Encourage sales with easy and efficient product browsing."
+msgstr ""
+
+#: inc/class-core-cross-sells.php:149
+msgid "Bored of the standard dropdown fields when viewing a variable product? Turn them into colour, image, or text swatches!"
+msgstr ""
+
+#: inc/class-core-cross-sells.php:160
+msgid "Easily add custom fields to your product variations; the perfect way to display organised additional product data to your customers."
+msgstr ""
+
+#: inc/class-core-cross-sells.php:167
+msgid "Bundle a selection of products on a single product page. It even works with variable products!"
+msgstr ""
+
+#: inc/class-core-cross-sells.php:231
+msgid "Learn More"
+msgstr ""
+
+#: inc/class-core-cross-sells.php:240
+msgid "View All Iconic Plugins"
+msgstr ""
+
+#: inc/class-core-licence.php:159
+msgid "Back to Settings"
+msgstr ""
+
+#: inc/class-core-licence.php:185
+msgid "Changelog"
+msgstr ""
+
+#: inc/class-core-licence.php:196
+msgid "Manage Licence &amp; Billing"
+msgstr ""
+
+#: inc/class-core-settings.php:232
+msgid "Dismiss"
+msgstr ""
+
+#: inc/class-core-settings.php:236
+msgid "Thank you for choosing Iconic. We've put together some useful links to help you get started:"
+msgstr ""
+
+#: inc/class-core-settings.php:240
+msgid "Is something not quite right?"
+msgstr ""
+
+#: inc/class-core-settings.php:240
+msgid ""
+"Take a look at our\n"
+"				<a href=\"%s\" target=\"_blank\">troubleshooting documentation</a>"
+msgstr ""
+
+#: inc/class-core-settings.php:241
+msgid "There is a permanent link to the plugin documentation in the \"Support\" section below."
+msgstr ""
+
+#: inc/class-core-settings.php:312
+msgid "Getting Started"
+msgstr ""
+
+#: inc/class-core-settings.php:355
+msgid "Dashboard"
+msgstr ""
+
+#: inc/class-core-settings.php:361
+msgid "License &amp; Account Settings"
+msgstr ""
+
+#: inc/class-core-settings.php:367
+msgid "License &amp; Billing"
+msgstr ""
+
+#: inc/class-core-settings.php:368
+msgid "Activate or sync your license, cancel your subscription, print invoices, and manage your account information."
+msgstr ""
+
+#: inc/class-core-settings.php:374
+msgid "Your Account"
+msgstr ""
+
+#: inc/class-core-settings.php:375
+msgid "Manage all of your Iconic plugins, supscriptions, renewals, and more."
+msgstr ""
+
+#: inc/class-core-settings.php:386, inc/class-core-settings.php:392
+msgid "Support"
+msgstr ""
+
+#: inc/class-core-settings.php:393
+msgid "Get premium support with a valid license."
+msgstr ""
+
+#: inc/class-core-settings.php:399
+msgid "Documentation"
+msgstr ""
+
+#: inc/class-core-settings.php:400
+msgid "Read the plugin documentation."
+msgstr ""
+
+#: inc/class-core-settings.php:415
+msgid "Works Well With..."
+msgstr ""
+
+#: inc/class-core-settings.php:431
+msgid "Submit Ticket"
+msgstr ""
+
+#: inc/class-core-settings.php:440
+msgid "Read Documentation"
+msgstr ""
+
+#: inc/class-core-settings.php:449
+msgid "Manage Your Account"
+msgstr ""
+
+#: inc/class-inventory.php:301
+msgid "Sorry, \"%s - %s\" is out of stock. Please make another selection."
+msgstr ""
+
+#: inc/class-inventory.php:304
+msgid "Sorry, you've got the last \"%s - %s\" in your cart; try a different selection."
+msgstr ""
+
+#: inc/class-inventory.php:307
+msgid "Sorry, there is only %d \"%s - %s\" left. Please adjust the quantity."
+msgstr ""
+
+#: inc/class-inventory.php:559
+msgid "Sorry, \"%s - %s\" is now out of stock for %s. Please make another selection."
+msgstr ""
+
+#: inc/class-settings.php:31
+msgid "Tables successfully installed."
+msgstr ""
+
+#: inc/admin/settings.php:20
+msgid "General"
+msgstr ""
+
+#: inc/admin/settings.php:25
+msgid "Display"
+msgstr ""
+
+#: inc/admin/settings.php:30
+msgid "Thumbnails"
+msgstr ""
+
+#: inc/admin/settings.php:35
+msgid "Loader"
+msgstr ""
+
+#: inc/admin/settings.php:43
+msgid "Tools"
+msgstr ""
+
+#: inc/admin/settings.php:49
+msgid "Install Database Tables"
+msgstr ""
+
+#: inc/admin/settings.php:50
+msgid "If there's an issue with the database tables, you can run this tool to ensure they're all properly installed."
+msgstr ""
+
+#: inc/admin/settings.php:52
+msgid "Install Tables"
+msgstr ""
+
+#: inc/admin/settings.php:60
+msgid "Cache Settings"
+msgstr ""
+
+#: inc/admin/settings.php:66
+msgid "Enable Image Cache"
+msgstr ""
+
+#: inc/admin/settings.php:67
+msgid "Once added to cart, the customer's final variation image will be cached. Without this, images will be generated dynamically every time, and could slow down your website."
+msgstr ""
+
+#: inc/admin/settings.php:73
+msgid "Cache Duration (Hours)"
+msgstr ""
+
+#: inc/admin/settings.php:83
+msgid "Image Settings"
+msgstr ""
+
+#: inc/admin/settings.php:89, inc/admin/settings.php:131
+msgid "Width (%)"
+msgstr ""
+
+#: inc/admin/settings.php:90
+msgid "Enter a percentage for the width of the image display. This is entirely theme dependant, but usually resides around 48."
+msgstr ""
+
+#: inc/admin/settings.php:96, inc/admin/settings.php:138
+msgid "Position"
+msgstr ""
+
+#: inc/admin/settings.php:97, inc/admin/settings.php:139
+msgid "Choose a position for the images."
+msgstr ""
+
+#: inc/admin/settings.php:101, inc/admin/settings.php:143
+msgid "Left"
+msgstr ""
+
+#: inc/admin/settings.php:102, inc/admin/settings.php:144
+msgid "Right"
+msgstr ""
+
+#: inc/admin/settings.php:103, inc/admin/settings.php:145
+msgid "None"
+msgstr ""
+
+#: inc/admin/settings.php:112
+msgid "Responsive Settings"
+msgstr ""
+
+#: inc/admin/settings.php:118
+msgid "Enable Breakpoint"
+msgstr ""
+
+#: inc/admin/settings.php:124
+msgid "Breakpoint (px)"
+msgstr ""
+
+#: inc/admin/settings.php:125
+msgid "Settings below will be applied when the screen size is below this value."
+msgstr ""
+
+#: inc/admin/settings.php:132
+msgid "Image container with after the breakpoint."
+msgstr ""
+
+#: inc/admin/settings.php:154
+msgid "Thumbnail Settings"
+msgstr ""
+
+#: inc/admin/settings.php:160
+msgid "Enable Thumbnails"
+msgstr ""
+
+#: inc/admin/settings.php:161
+msgid "When enabled, the product gallery will be displayed below the main product image."
+msgstr ""
+
+#: inc/admin/settings.php:167
+msgid "Column Count"
+msgstr ""
+
+#: inc/admin/settings.php:168
+msgid "Number of thumbnails in a row."
+msgstr ""
+
+#: inc/admin/settings.php:174
+msgid "Spacing (px)"
+msgstr ""
+
+#: inc/admin/settings.php:175
+msgid "Space between thumbnail images."
+msgstr ""
+
+#: inc/admin/settings.php:185
+msgid "Loading Overlay Settings"
+msgstr ""
+
+#: inc/admin/settings.php:191, inc/admin/settings.php:229
+msgid "Colour"
+msgstr ""
+
+#: inc/admin/settings.php:197
+msgid "Opacity"
+msgstr ""
+
+#: inc/admin/settings.php:198
+msgid "Enter a number between 0 and 1. 0 = transparent, 1 = opaque."
+msgstr ""
+
+#: inc/admin/settings.php:208
+msgid "Loading Icon Settings"
+msgstr ""
+
+#: inc/admin/settings.php:214
+msgid "Icon Style"
+msgstr ""
+
+#: inc/partials/meta-attribute-layer.php:23
+msgid "Default Value"
+msgstr ""
+
+#: inc/partials/meta-attribute-layer.php:28
+msgid "Select a default..."
+msgstr ""
+
+#: inc/partials/meta-attribute-layer.php:53
+msgid "Value"
+msgstr ""
+
+#: inc/partials/meta-attribute-layer.php:54
+msgid "Stock Qty"
+msgstr ""
+
+#: inc/partials/meta-attribute-layer.php:75
+msgid "Set image for when %s is %s"
+msgstr ""
+
+#: inc/partials/meta-static-layer.php:29
+msgid "Static Layer"
+msgstr ""
+
+#: inc/partials/meta-static-layer.php:31
+msgid "Remove"
+msgstr ""
+
+#: inc/partials/meta-toolbar.php:13
+msgid "Enable Configurator"
+msgstr ""
+
+#: inc/partials/meta-toolbar.php:17
+msgid "Add Static Layer"
+msgstr ""

@@ -1,0 +1,12 @@
+2018-09-16T12:02:26+00:00 CRITICAL Uncaught Error: Call to a member function get_image() on string in /srv/personalizador/site/wp-content/plugins/woocommerce/includes/wc-template-functions.php:1264
+Stack trace:
+#0 /srv/personalizador/site/wp-content/themes/storefront/inc/woocommerce/storefront-woocommerce-template-functions.php(449): woocommerce_get_product_thumbnail()
+#1 /srv/personalizador/site/wp-includes/class-wp-hook.php(286): storefront_sticky_single_add_to_cart('')
+#2 /srv/personalizador/site/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#3 /srv/personalizador/site/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#4 /srv/personalizador/site/wp-content/themes/storefront/footer.php(32): do_action('storefront_afte...')
+#5 /srv/personalizador/site/wp-includes/template.php(688): require_once('/srv/personaliz...')
+#6 /srv/personalizador/site/wp-includes/template.php(647): load_template('/srv/personaliz...', true)
+#7 /srv/personalizador/site/wp-includes/general-template.php(76): locate_template(Array, true)
+#8 /sr
+
