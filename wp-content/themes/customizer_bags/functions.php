@@ -16,6 +16,24 @@ add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list'
  */
 add_theme_support( 'genesis-responsive-viewport' );
 
+/**
+ * Declare WooCommerce support
+ * Reference: https://www.wpstud.io/3-ways-to-integrate-woocommerce-with-genesis/
+ */
+// function woocommerce_setup_genesis() {
+//     woocommerce_content();
+// }
+
+/**
+ * WooCommerce support AlphaBlossom Method
+ * Reference: http://www.alphablossom.com/integrate-woocommerce-with-genesis-framework-wordpress/
+ */
+include_once( '/assets/woocommerce-genesis-theme-support.php' );
+
+/**
+ * Remove admin warning
+ */
+add_theme_support( 'woocommerce' );
 
 /**
  * Proper way to enqueue scripts and styles.
