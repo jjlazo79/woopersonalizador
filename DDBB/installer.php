@@ -83,7 +83,7 @@ if (!isset($_SERVER['REQUEST_URI']))  {
 //COMPARE VALUES
 $GLOBALS['DUPX_DEBUG']			= false;
 $GLOBALS['DUPX_DBPASS_CHECK']	= true;
-$GLOBALS['FW_CREATED']			= '2018-09-17 10:35:34';
+$GLOBALS['FW_CREATED']			= '2018-09-17 15:05:08';
 $GLOBALS['FW_VERSION_DUP']		= '1.2.44';
 $GLOBALS['FW_VERSION_WP']		= '4.9.8';
 $GLOBALS['FW_VERSION_DB']		= '10.1.29';
@@ -92,10 +92,10 @@ $GLOBALS['FW_VERSION_OS']		= 'WINNT';
 //GENERAL
 $GLOBALS['FW_TABLEPREFIX']		= 'wp_';
 $GLOBALS['FW_URL_OLD']			= 'http://personalizador.test';
-$GLOBALS['FW_PACKAGE_NAME']		= '20180917_personalizadorbolsos_7e66fb63cbf293e11360180917103534_archive.zip';
+$GLOBALS['FW_PACKAGE_NAME']		= '20180917_personalizadorbolsos_179e28d18433eae49118180917150508_archive.zip';
 $GLOBALS['FW_PACKAGE_NOTES']	= '';
-$GLOBALS['FW_PACKAGE_EST_SIZE']	= 147506;
-$GLOBALS['FW_SECURE_NAME']		= '20180917_personalizadorbolsos_7e66fb63cbf293e11360180917103534';
+$GLOBALS['FW_PACKAGE_EST_SIZE']	= 150111;
+$GLOBALS['FW_SECURE_NAME']		= '20180917_personalizadorbolsos_179e28d18433eae49118180917150508';
 $GLOBALS['FW_DBHOST']			= '';
 $GLOBALS['FW_DBHOST']			= empty($GLOBALS['FW_DBHOST']) ? 'localhost' : $GLOBALS['FW_DBHOST'];
 $GLOBALS['FW_DBPORT']			= '';
@@ -104,7 +104,7 @@ $GLOBALS['FW_DBNAME']			= '';
 $GLOBALS['FW_DBUSER']			= '';
 $GLOBALS['FW_DBPASS']			= '';
 $GLOBALS['FW_SECUREON']			= 0;
-$GLOBALS['FW_SECUREPASS']		= '$2a$08$D.l4A65vuPa7IXP/ihfxmesXFTcgmRnxiZ63kK5cHiuscJyFXZxgW';
+$GLOBALS['FW_SECUREPASS']		= '$2a$08$juJ7igTsVWaJeYP0np3diufB/tsInVKVflCLWrKam9.75oDuTK6ji';
 $GLOBALS['FW_BLOGNAME']			= 'Personalizador Bolsos';
 $GLOBALS['FW_WPROOT']			= 'C:/xampp/htdocs/personalizador/';
 $GLOBALS['FW_WPLOGIN_URL']		= 'http://personalizador.test/wp-login.php';
