@@ -27,7 +27,7 @@ get_header( 'shop' ); ?>
 		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
 		 * @hooked woocommerce_breadcrumb - 20
 		 */
-		do_action( 'woocommerce_before_main_content' );
+		// do_action( 'woocommerce_before_main_content' );
 	?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
@@ -38,8 +38,73 @@ get_header( 'shop' ); ?>
 
 			<?php else : ?>
 
-				<?php echo 'tiene la clase'; ?>
-				<?php wc_get_template_part( 'content', 'single-product' ); ?>
+				<?php echo 'Tiene la clase '. $product->get_categories( ', ', ' ' . _n( ' ', '  ', $cat_count, 'woocommerce' ) . ' ', ' ' ); ?>
+
+				<?php
+
+				do_action( 'woocommerce_before_single_product' );
+
+				if ( post_password_required() ) {
+					echo get_the_password_form(); // WPCS: XSS ok.
+					return;
+				}
+				?>
+				<div id="product-<?php the_ID(); ?>" <?php wc_product_class(); ?>>
+
+					<div id="product-atributes" class="col-1" style="width: 25%; float: left;">
+						<div class="summary entry-summary">
+							<button class="btn" id="js-asa">Asa</button>
+							<button class="btn" id="js-frontal">Frontal</button>
+							<button class="btn" id="js-filo">Filo lateral</button>
+							<button class="btn" id="js-arista">Arista posterior</button>
+							<div id="content-list">
+							</div>
+							<?php
+								/**
+								 * Hook: woocommerce_single_product_summary.
+								 *
+								 * @hooked woocommerce_template_single_title - 5
+								 * @hooked woocommerce_template_single_rating - 10
+								 * @hooked woocommerce_template_single_price - 10
+								 * @hooked woocommerce_template_single_excerpt - 20
+								 * @hooked woocommerce_template_single_add_to_cart - 30
+								 * @hooked woocommerce_template_single_meta - 40
+								 * @hooked woocommerce_template_single_sharing - 50
+								 * @hooked WC_Structured_Data::generate_product_data() - 60
+								 */
+								do_action( 'woocommerce_single_product_summary' );
+							?>
+						</div>
+					</div>
+
+					<div id="product-image" class="col-2" style="width: 50%; float: left;">
+						<?php
+							/**
+							 * Hook: woocommerce_before_single_product_summary.
+							 *
+							 * @hooked woocommerce_show_product_sale_flash - 10
+							 * @hooked woocommerce_show_product_images - 20
+							 */
+							do_action( 'woocommerce_before_single_product_summary' );
+						?>
+					</div>
+
+					<div id="product-price" class="col-3" style="width: 25%; float: left;">
+						<?php
+							/**
+							 * Hook: woocommerce_after_single_product_summary.
+							 *
+							 * @hooked woocommerce_output_product_data_tabs - 10
+							 * @hooked woocommerce_upsell_display - 15
+							 * @hooked woocommerce_output_related_products - 20
+							 */
+							do_action( 'woocommerce_after_single_product_summary' );
+						?>
+					</div>
+
+				</div>
+
+				<?php do_action( 'woocommerce_after_single_product' ); ?>
 
 			<?php endif; ?>
 
@@ -51,7 +116,7 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 		 */
-		do_action( 'woocommerce_after_main_content' );
+		// do_action( 'woocommerce_after_main_content' );
 	?>
 
 	<?php
@@ -60,16 +125,8 @@ get_header( 'shop' ); ?>
 		 *
 		 * @hooked woocommerce_get_sidebar - 10
 		 */
-		
-		if (!has_term( 'personalizador', 'product_cat' )) : ?>
 
-			<?php do_action( 'woocommerce_sidebar' ); ?>
-
-		<?php else : ?>
-
-			<?php // Without sidebar ?>
-
-		<?php endif; 
+		// do_action( 'woocommerce_sidebar' );
 	?>
 
 <?php get_footer( 'shop' );

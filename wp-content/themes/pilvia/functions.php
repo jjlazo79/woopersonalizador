@@ -26,10 +26,10 @@ function sf_child_theme_dequeue_style() {
 /**
  * Proper way to enqueue scripts and styles.
  */
-function pilvia_scripts() {
+function customizer_bag_scripts() {
     wp_enqueue_script( 'personalizador', get_stylesheet_directory_uri() . '/assets/js/personalizador.js', array(), '1.0.0', true );
 }
-add_action( 'wp_enqueue_scripts', 'pilvia_scripts' );
+add_action( 'wp_enqueue_scripts', 'customizer_bag_scripts' );
 
 
 /**
