@@ -1,0 +1,662 @@
+# Copyright (C) 2018 iconic-woothumbs
+# This file is distributed under the same license as the iconic-woothumbs package.
+msgid ""
+msgstr ""
+"Project-Id-Version: iconic-woothumbs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: iconic-woothumbs.php:251
+msgid "The image cache has been cleared."
+msgstr ""
+
+#: iconic-woothumbs.php:343, inc/admin/bulk-edit.php:14
+msgid "Bulk Edit Variation Images"
+msgstr ""
+
+#: iconic-woothumbs.php:343
+msgid "Bulk Edit"
+msgstr ""
+
+#: iconic-woothumbs.php:351
+msgid "You do not have sufficient permissions to access this page."
+msgstr ""
+
+#: iconic-woothumbs.php:363
+msgid "WooThumbs"
+msgstr ""
+
+#: iconic-woothumbs.php:377
+msgid "Disable WooThumbs?"
+msgstr ""
+
+#: iconic-woothumbs.php:384
+msgid "Video URL"
+msgstr ""
+
+#: iconic-woothumbs.php:386
+msgid "Enter a video URL to display in the lightbox only ( a video play icon will be placed over the gallery images ). Most video hosting services are supported."
+msgstr ""
+
+#: iconic-woothumbs.php:393
+msgid "Maintain Slide Index?"
+msgstr ""
+
+#: iconic-woothumbs.php:395
+msgid "When checked, the slide index will be maintained upon changing images. For example, if you're viewing the second image in the slider, and change variation, the second image will be selected from the new images."
+msgstr ""
+
+#: iconic-woothumbs.php:403
+msgid "Maintain Gallery?"
+msgstr ""
+
+#: iconic-woothumbs.php:405
+msgid "When checked, the main product gallery will also be used for variations."
+msgstr ""
+
+#: iconic-woothumbs.php:511
+msgid "There was no change."
+msgstr ""
+
+#: iconic-woothumbs.php:514
+msgid "Please use only numbers and commas."
+msgstr ""
+
+#: iconic-woothumbs.php:517
+msgid "Sorry, an error occurred. Please try again."
+msgstr ""
+
+#: iconic-woothumbs.php:520
+msgid "Nothing was entered."
+msgstr ""
+
+#: iconic-woothumbs.php:698, templates/loop-images.php:40, inc/admin/settings.php:52
+msgid "Fullscreen"
+msgstr ""
+
+#: iconic-woothumbs.php:699, templates/loop-images.php:44
+msgid "Play Video"
+msgstr ""
+
+#: iconic-woothumbs.php:1203
+msgid "Browse Wishlist"
+msgstr ""
+
+#: iconic-woothumbs.php:1205
+msgid "Add to Wishlist"
+msgstr ""
+
+#: inc/class-licence.php:90
+msgid "Manage Licence &amp; Billing"
+msgstr ""
+
+#: inc/class-licence.php:99, inc/class-settings.php:90
+msgid "Create Support Ticket"
+msgstr ""
+
+#: inc/class-licence.php:115
+msgid "Back to Settings"
+msgstr ""
+
+#: inc/class-licence.php:141
+msgid "Changelog"
+msgstr ""
+
+#: inc/class-media.php:48
+msgid "WooThumbs Media Details"
+msgstr ""
+
+#: inc/class-media.php:52
+msgid "URL"
+msgstr ""
+
+#: inc/class-media.php:58
+msgid "Aspect Ratio"
+msgstr ""
+
+#: inc/class-settings.php:63, inc/admin/settings.php:711
+msgid "Clear Image Cache"
+msgstr ""
+
+#: inc/class-settings.php:78
+msgid "Clear Transients"
+msgstr ""
+
+#: inc/class-settings.php:99
+msgid "Read Documentation"
+msgstr ""
+
+#: inc/class-settings.php:158
+msgid "You're awesome! We've been looking forward to having you on board, and we're pleased to see the day has finally come."
+msgstr ""
+
+#: inc/class-settings.php:159
+msgid "Make yourself at home. If you get stuck, check out the <a href=\"%s\" target=\"_blank\">documentation</a>, or create a support ticket using the button below."
+msgstr ""
+
+#: inc/admin/bulk-edit.php:16
+msgid "From this page you can edit all variation images from one place. Simply enter a comma separated list (no spaces) of image IDs for each variation and click Update. You can find your image IDs in the <a href=\"%s\" target=\"_blank\">Media Library</a>."
+msgstr ""
+
+#: inc/admin/bulk-edit.php:94, inc/admin/bulk-edit.php:94
+msgid "Update"
+msgstr ""
+
+#: inc/admin/bulk-edit.php:94
+msgid "Updating..."
+msgstr ""
+
+#: inc/admin/bulk-edit.php:94
+msgid "Updated"
+msgstr ""
+
+#: inc/admin/bulk-edit.php:94
+msgid "Error"
+msgstr ""
+
+#: inc/admin/bulk-edit.php:108
+msgid "Sorry, no variations were found."
+msgstr ""
+
+#: inc/admin/settings.php:22
+msgid "Dashboard"
+msgstr ""
+
+#: inc/admin/settings.php:27
+msgid "Display"
+msgstr ""
+
+#: inc/admin/settings.php:32
+msgid "Carousel"
+msgstr ""
+
+#: inc/admin/settings.php:37
+msgid "Navigation"
+msgstr ""
+
+#: inc/admin/settings.php:47
+msgid "Zoom"
+msgstr ""
+
+#: inc/admin/settings.php:57
+msgid "Responsive"
+msgstr ""
+
+#: inc/admin/settings.php:73
+msgid "Display Settings"
+msgstr ""
+
+#: inc/admin/settings.php:79
+msgid "Gallery Width (%)"
+msgstr ""
+
+#: inc/admin/settings.php:80
+msgid "Enter a percentage for the width of the image gallery. This is entirely theme dependant, but usually resides around 48."
+msgstr ""
+
+#: inc/admin/settings.php:87
+msgid "Position"
+msgstr ""
+
+#: inc/admin/settings.php:88
+msgid "Choose a position for the images. Go to the Responsive tab to change the position at a certain breakpoint."
+msgstr ""
+
+#: inc/admin/settings.php:92, inc/admin/settings.php:329, inc/admin/settings.php:511, inc/admin/settings.php:644
+msgid "Left"
+msgstr ""
+
+#: inc/admin/settings.php:93, inc/admin/settings.php:330, inc/admin/settings.php:510, inc/admin/settings.php:645
+msgid "Right"
+msgstr ""
+
+#: inc/admin/settings.php:94, inc/admin/settings.php:646
+msgid "None"
+msgstr ""
+
+#: inc/admin/settings.php:100
+msgid "Icon Colours"
+msgstr ""
+
+#: inc/admin/settings.php:108
+msgid "Show Icons on Hover?"
+msgstr ""
+
+#: inc/admin/settings.php:109
+msgid "When enabled, icons will only be visible when the image is hovered."
+msgstr ""
+
+#: inc/admin/settings.php:113, inc/admin/settings.php:125, inc/admin/settings.php:227, inc/admin/settings.php:247, inc/admin/settings.php:269, inc/admin/settings.php:291, inc/admin/settings.php:315, inc/admin/settings.php:383, inc/admin/settings.php:449, inc/admin/settings.php:570, inc/admin/settings.php:582, inc/admin/settings.php:594, inc/admin/settings.php:616, inc/admin/settings.php:657
+msgid "Yes"
+msgstr ""
+
+#: inc/admin/settings.php:114, inc/admin/settings.php:126, inc/admin/settings.php:228, inc/admin/settings.php:248, inc/admin/settings.php:270, inc/admin/settings.php:292, inc/admin/settings.php:316, inc/admin/settings.php:384, inc/admin/settings.php:450, inc/admin/settings.php:571, inc/admin/settings.php:583, inc/admin/settings.php:595, inc/admin/settings.php:617, inc/admin/settings.php:658
+msgid "No"
+msgstr ""
+
+#: inc/admin/settings.php:120
+msgid "Show Icon Tooltips?"
+msgstr ""
+
+#: inc/admin/settings.php:121
+msgid "When icons are hovered, a tooltip will be displayed."
+msgstr ""
+
+#: inc/admin/settings.php:136
+msgid "Image Sizes"
+msgstr ""
+
+#: inc/admin/settings.php:143
+msgid "Single Image Width (px)"
+msgstr ""
+
+#: inc/admin/settings.php:144
+msgid "For a responsive site, set this to the largest size your single image will be. Images will be regenerated automatically, but may take time to appear on the frontend."
+msgstr ""
+
+#: inc/admin/settings.php:151
+msgid "Single Image Crop Ratio"
+msgstr ""
+
+#: inc/admin/settings.php:152
+msgid "Common examples: 1:1, 4:6, 16:9. If empty, no cropping will occur. Once changed, product gallery images will be regenerated automatically, but may take time to appear on the frontend."
+msgstr ""
+
+#: inc/admin/settings.php:163
+msgid "Thumbnail Image Width (px)"
+msgstr ""
+
+#: inc/admin/settings.php:164
+msgid "Images will be regenerated automatically, but may take time to appear on the frontend."
+msgstr ""
+
+#: inc/admin/settings.php:171
+msgid "Thumbnail Image Crop Ratio"
+msgstr ""
+
+#: inc/admin/settings.php:172
+msgid "Common examples: 1:1, 4:6, 16:9. If empty, no cropping will occur. Once changed, thumbnail images will be regenerated automatically, but may take time to appear on the frontend."
+msgstr ""
+
+#: inc/admin/settings.php:183
+msgid "Large Image Size"
+msgstr ""
+
+#: inc/admin/settings.php:184
+msgid "Choose a size for large images. Hover zoom and fullscreen will both use the size you select here."
+msgstr ""
+
+#: inc/admin/settings.php:195
+msgid "Carousel Settings"
+msgstr ""
+
+#: inc/admin/settings.php:201
+msgid "Mode"
+msgstr ""
+
+#: inc/admin/settings.php:202
+msgid "How should the main images transition?"
+msgstr ""
+
+#: inc/admin/settings.php:206
+msgid "Horizontal"
+msgstr ""
+
+#: inc/admin/settings.php:207
+msgid "Vertical"
+msgstr ""
+
+#: inc/admin/settings.php:208
+msgid "Fade"
+msgstr ""
+
+#: inc/admin/settings.php:214
+msgid "Transition Speed (ms)"
+msgstr ""
+
+#: inc/admin/settings.php:215
+msgid "The speed at which images slide or fade in milliseconds."
+msgstr ""
+
+#: inc/admin/settings.php:222
+msgid "Autoplay?"
+msgstr ""
+
+#: inc/admin/settings.php:223
+msgid "When enabled, the slider images will automatically transition."
+msgstr ""
+
+#: inc/admin/settings.php:234
+msgid "Slide Duration (ms)"
+msgstr ""
+
+#: inc/admin/settings.php:235
+msgid "If you have autoplay set to true, then you can set the slide duration for each slide."
+msgstr ""
+
+#: inc/admin/settings.php:242
+msgid "Enable Infinite Loop?"
+msgstr ""
+
+#: inc/admin/settings.php:243
+msgid "When you get to the last image, loop back to the first. Horizontal or Vertical modes only."
+msgstr ""
+
+#: inc/admin/settings.php:258
+msgid "General Navigation Settings"
+msgstr ""
+
+#: inc/admin/settings.php:264
+msgid "Enable Prev/Next Arrows?"
+msgstr ""
+
+#: inc/admin/settings.php:265
+msgid "This will display prev/next arrows over the main slider image."
+msgstr ""
+
+#: inc/admin/settings.php:280
+msgid "Thumbnails Settings"
+msgstr ""
+
+#: inc/admin/settings.php:286
+msgid "Enable Thumbnails?"
+msgstr ""
+
+#: inc/admin/settings.php:287
+msgid "Choose whether to enable the thumbnail navigation."
+msgstr ""
+
+#: inc/admin/settings.php:298
+msgid "Thumbnails Type"
+msgstr ""
+
+#: inc/admin/settings.php:299
+msgid "Choose either sliding or stacked thumbnails."
+msgstr ""
+
+#: inc/admin/settings.php:303
+msgid "Sliding thumbnails"
+msgstr ""
+
+#: inc/admin/settings.php:304
+msgid "Stacked Thumbnails"
+msgstr ""
+
+#: inc/admin/settings.php:310
+msgid "Enable Thumbnail Controls?"
+msgstr ""
+
+#: inc/admin/settings.php:311
+msgid "If you are using sliding thumbnails, enable or disable the prev/next controls."
+msgstr ""
+
+#: inc/admin/settings.php:322
+msgid "Thumbnails Position"
+msgstr ""
+
+#: inc/admin/settings.php:323
+msgid "Choose where the thumbnails are positioned in relation to the main images."
+msgstr ""
+
+#: inc/admin/settings.php:327
+msgid "Above"
+msgstr ""
+
+#: inc/admin/settings.php:328
+msgid "Below"
+msgstr ""
+
+#: inc/admin/settings.php:336
+msgid "Width (%)"
+msgstr ""
+
+#: inc/admin/settings.php:337
+msgid "If you chose to position your thumbanils on the left or right, enter a percentage width for them."
+msgstr ""
+
+#: inc/admin/settings.php:344
+msgid "Thumbnails Count"
+msgstr ""
+
+#: inc/admin/settings.php:345
+msgid "The number of thumbnails to display in a row."
+msgstr ""
+
+#: inc/admin/settings.php:352
+msgid "Thumbnails Transition Speed (ms)"
+msgstr ""
+
+#: inc/admin/settings.php:353
+msgid "The speed at which the sliding thumbnail navigation moves in milliseconds."
+msgstr ""
+
+#: inc/admin/settings.php:360
+msgid "Thumbnails Spacing"
+msgstr ""
+
+#: inc/admin/settings.php:361
+msgid "The space between each thumbnail."
+msgstr ""
+
+#: inc/admin/settings.php:372
+msgid "Bullets Settings"
+msgstr ""
+
+#: inc/admin/settings.php:378
+msgid "Enable Bullets?"
+msgstr ""
+
+#: inc/admin/settings.php:379
+msgid "Choose whether to enable the bullet navigation."
+msgstr ""
+
+#: inc/admin/settings.php:438
+msgid "General Zoom Settings"
+msgstr ""
+
+#: inc/admin/settings.php:444
+msgid "Enable Hover Zoom?"
+msgstr ""
+
+#: inc/admin/settings.php:456
+msgid "Zoom Type"
+msgstr ""
+
+#: inc/admin/settings.php:461
+msgid "Inner"
+msgstr ""
+
+#: inc/admin/settings.php:462
+msgid "Outside"
+msgstr ""
+
+#: inc/admin/settings.php:463
+msgid "Follow"
+msgstr ""
+
+#: inc/admin/settings.php:473
+msgid "Outside and Follow Zoom Settings"
+msgstr ""
+
+#: inc/admin/settings.php:479
+msgid "Lens Width"
+msgstr ""
+
+#: inc/admin/settings.php:480
+msgid "The width of your zoom lens."
+msgstr ""
+
+#: inc/admin/settings.php:487
+msgid "Lens Height"
+msgstr ""
+
+#: inc/admin/settings.php:488
+msgid "The height of your zoom lens."
+msgstr ""
+
+#: inc/admin/settings.php:499
+msgid "Outside Zoom Settings"
+msgstr ""
+
+#: inc/admin/settings.php:505
+msgid "Zoom Position"
+msgstr ""
+
+#: inc/admin/settings.php:506
+msgid "Choose the position of your zoomed image in relation to the main image."
+msgstr ""
+
+#: inc/admin/settings.php:517
+msgid "Lens Colour"
+msgstr ""
+
+#: inc/admin/settings.php:525
+msgid "Lens opacity"
+msgstr ""
+
+#: inc/admin/settings.php:526
+msgid "Set an opacity between 0 and 1 for the lens."
+msgstr ""
+
+#: inc/admin/settings.php:537
+msgid "Follow Zoom Settings"
+msgstr ""
+
+#: inc/admin/settings.php:543
+msgid "Zoom Shape"
+msgstr ""
+
+#: inc/admin/settings.php:548
+msgid "Circular"
+msgstr ""
+
+#: inc/admin/settings.php:549
+msgid "Square"
+msgstr ""
+
+#: inc/admin/settings.php:559
+msgid "Fullscreen Settings"
+msgstr ""
+
+#: inc/admin/settings.php:565
+msgid "Enable Fullscreen?"
+msgstr ""
+
+#: inc/admin/settings.php:577
+msgid "Enable Click Anywhere?"
+msgstr ""
+
+#: inc/admin/settings.php:578
+msgid "When enabled, click anywhere on the main image to trigger fullscreen."
+msgstr ""
+
+#: inc/admin/settings.php:589
+msgid "Enable Image Title?"
+msgstr ""
+
+#: inc/admin/settings.php:590
+msgid "When enabled, the image title will be visible when viewing fullscreen."
+msgstr ""
+
+#: inc/admin/settings.php:605
+msgid "Responsive Settings"
+msgstr ""
+
+#: inc/admin/settings.php:611
+msgid "Enable Breakpoint?"
+msgstr ""
+
+#: inc/admin/settings.php:612
+msgid "If your website is responsive, you can change the width of the slider after a certain breakpoint."
+msgstr ""
+
+#: inc/admin/settings.php:623
+msgid "Breakpoint (px)"
+msgstr ""
+
+#: inc/admin/settings.php:624
+msgid "The slider width will be affected after the breakpoint."
+msgstr ""
+
+#: inc/admin/settings.php:631
+msgid "Width After Breakpoint (%)"
+msgstr ""
+
+#: inc/admin/settings.php:632
+msgid "The width of the images display after the breakpoint."
+msgstr ""
+
+#: inc/admin/settings.php:639
+msgid "Position After Breakpoint"
+msgstr ""
+
+#: inc/admin/settings.php:640
+msgid "Choose a position for the images after the breakpoint."
+msgstr ""
+
+#: inc/admin/settings.php:652
+msgid "Move Thumbnails Below After Breakpoint?"
+msgstr ""
+
+#: inc/admin/settings.php:653
+msgid "Choose whether to move the thumbnail navigation below the main image display after the breakpoint."
+msgstr ""
+
+#: inc/admin/settings.php:664
+msgid "Thumbnails Count After Breakpoint"
+msgstr ""
+
+#: inc/admin/settings.php:665
+msgid "The number of thumbnails to display in a row after the breakpoint."
+msgstr ""
+
+#: inc/admin/settings.php:676
+msgid "Welcome"
+msgstr ""
+
+#: inc/admin/settings.php:687
+msgid "License & Account Settings"
+msgstr ""
+
+#: inc/admin/settings.php:693
+msgid "License &amp; Billing"
+msgstr ""
+
+#: inc/admin/settings.php:694
+msgid "Activate or sync your license, cancel your subscription, print invoices, and manage your account information."
+msgstr ""
+
+#: inc/admin/settings.php:705
+msgid "Tools"
+msgstr ""
+
+#: inc/admin/settings.php:712
+msgid "Clear the image cache to refresh all product imagery."
+msgstr ""
+
+#: inc/admin/settings.php:723, inc/admin/settings.php:729
+msgid "Support"
+msgstr ""
+
+#: inc/admin/settings.php:730
+msgid "Get premium support with a valid license."
+msgstr ""
+
+#: inc/admin/settings.php:736
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/settings.php:737
+msgid "Read the plugin documentation."
+msgstr ""
+
+#: inc/admin/settings.php:748
+msgid "Works Well With..."
+msgstr ""

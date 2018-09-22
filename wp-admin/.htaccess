@@ -1,0 +1,6 @@
+<IfModule mod_dtimeout.c>
+<Files ~ ".php">
+SetEnvIf Request_URI "admin.php" DynamicTimeout=1200
+</Files>
+</IfModule>
+

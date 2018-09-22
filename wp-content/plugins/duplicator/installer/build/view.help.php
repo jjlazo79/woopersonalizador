@@ -222,7 +222,7 @@ STEP 1
 		<tr>
 			<td>Logging</td>
 			<td>
-				The level of detail that will be sent to the log file (installer-log.txt).  The recommend setting for most installs should be 'Light'.
+				The level of detail that will be sent to the log file (<?php echo $GLOBALS["LOG_FILE_NAME"];?>).  The recommend setting for most installs should be 'Light'.
 				Note if you use Debug the amount of data written can be very large.  Debug is only recommended for support.
 			</td>
 		</tr>
@@ -540,13 +540,14 @@ STEP 4
 	When completed with the installation please delete all installation files.  Leaving these files on your server can impose a security risk!   You can remove
 	all the security files by logging into your WordPress admin and following the remove notification links.   Be sure all these files are removed.  Optionally
 	it is also recommended to remove the archive.zip file.
+	<!-- Do not display hash codes anywhere in UI. -->
 	<ul>
 		<li>installer.php</li>
-		<li>installer-data.sql</li>
 		<li>installer-backup.php</li>
-		<li>installer-log.txt</li>
-		<li>database.sql</li>
-		<li>[a-hash-code]_archive.zip <small>(optional)</small></li>
+		<li>dup-installer-data_[HASH].sql</li>
+		<li>dup-database_[HASH].sql</li>
+		<li>dup-installer-log_[HASH].txt</li>
+		<li>[HASH]_archive.zip</li>
 	</ul>
 	<br/><br/>
 

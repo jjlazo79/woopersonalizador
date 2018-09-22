@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Duplicator &#8211; WordPress Migration Plugin - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-06-06 02:39:28+0000\n"
+"PO-Revision-Date: 2018-09-21 06:45:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -664,10 +664,6 @@ msgstr "El servidor ha interrumpido la construcción"
 msgid "Quick Filters"
 msgstr "Filtros rápidos"
 
-#: views/packages/main/s2.scan3.php:55
-msgid "Compressing larger sites on <i>some budget hosts</i> may cause timeouts.  "
-msgstr "La compresión de sitios grandes en <i>algunos alojamientos económicos</i> puede causar tiempos de espera.  "
-
 #: views/tools/diagnostics/inc.validator.php:75
 msgid "Note: Symlinks are not discoverable on Windows OS with PHP"
 msgstr "Nota: Los enlaces simbólicos no son detectables en el sistema operativo Windows con PHP"
@@ -748,6 +744,10 @@ msgstr "2. Eliminar las revisiones de las publicaciones y los datos obsoletos de
 #: views/packages/main/s2.scan3.php:72
 msgid "Consider trying multi-threaded support in "
 msgstr "Considera intentar la compatibilidad de multihilo en "
+
+#: views/packages/main/s2.scan3.php:55
+msgid "Compressing larger sites on <i>some budget hosts</i> may cause timeouts.  "
+msgstr "La compresión de sitios grandes en <i>algunos alojamientos económicos</i> puede hacer que se supere el tiempo de espera. "
 
 #: duplicator.php:322
 msgid "Go Pro"
@@ -1819,18 +1819,6 @@ msgstr "Tiempo del proceso:"
 msgid "Web Server"
 msgstr "Servidor web"
 
-#: views/packages/main/s2.scan3.php:52
-msgid "File Count"
-msgstr "Conteo de archivos"
-
-#: views/packages/main/s2.scan3.php:53
-msgid "Directory Count"
-msgstr "Conteo de directorios"
-
-#: views/packages/main/s2.scan3.php:211 views/packages/main/s2.scan3.php:227
-msgid "Name Checks"
-msgstr "Chequeo de nombres"
-
 #: views/packages/main/s2.scan3.php:487
 msgid "No file extension filters have been set."
 msgstr "No se han establecido filtros de extensiones de archivo."
@@ -2090,6 +2078,18 @@ msgstr "Restablecer"
 #: views/packages/main/s2.scan1.php:167
 msgid "Scan Error"
 msgstr "Error de análisis"
+
+#: views/packages/main/s2.scan3.php:52
+msgid "File Count"
+msgstr "Cantidad de archivos"
+
+#: views/packages/main/s2.scan3.php:53
+msgid "Directory Count"
+msgstr "Cantidad de directorios"
+
+#: views/packages/main/s2.scan3.php:211 views/packages/main/s2.scan3.php:227
+msgid "Name Checks"
+msgstr "Comprobaciones de nombres"
 
 #: duplicator.php:221 views/packages/main/packages.php:61
 #: views/settings/controller.php:19

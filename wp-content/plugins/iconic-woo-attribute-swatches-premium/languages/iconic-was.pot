@@ -1,0 +1,258 @@
+# Copyright (C) 2018 iconic-woo-attribute-swatches
+# This file is distributed under the same license as the iconic-woo-attribute-swatches package.
+msgid ""
+msgstr ""
+"Project-Id-Version: iconic-woo-attribute-swatches\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: inc/class-attributes.php:128
+msgid "Swatch Options"
+msgstr ""
+
+#: inc/class-attributes.php:308, inc/admin/product-tab.php:35
+msgid "Default"
+msgstr ""
+
+#: inc/class-attributes.php:308
+msgid "None"
+msgstr ""
+
+#: inc/class-attributes.php:314
+msgid "Swatch Type"
+msgstr ""
+
+#: inc/class-attributes.php:315
+msgid "Choose the type of swatches to use for this attribute."
+msgstr ""
+
+#: inc/class-attributes.php:337
+msgid "Swatch Shape"
+msgstr ""
+
+#: inc/class-attributes.php:338
+msgid "The shape of your swatches on the frontend."
+msgstr ""
+
+#: inc/class-attributes.php:342
+msgid "Round"
+msgstr ""
+
+#: inc/class-attributes.php:342
+msgid "Square"
+msgstr ""
+
+#: inc/class-attributes.php:352
+msgid "Swatch Size (px)"
+msgstr ""
+
+#: inc/class-attributes.php:353
+msgid "The size of your swatches on the frontend."
+msgstr ""
+
+#: inc/class-attributes.php:368
+msgid "Enable Tooltips?"
+msgstr ""
+
+#: inc/class-attributes.php:369
+msgid "When enabled, a tooltip style text description will accompany your swatches."
+msgstr ""
+
+#: inc/class-attributes.php:373, inc/class-attributes.php:388, inc/class-attributes.php:405
+msgid "Yes"
+msgstr ""
+
+#: inc/class-attributes.php:373, inc/class-attributes.php:388, inc/class-attributes.php:405
+msgid "No"
+msgstr ""
+
+#: inc/class-attributes.php:383
+msgid "Show Large Preview?"
+msgstr ""
+
+#: inc/class-attributes.php:384
+msgid "Display a larger preview of the image swatch within a tooltip."
+msgstr ""
+
+#: inc/class-attributes.php:399
+msgid "Show Swatch in Catalog?"
+msgstr ""
+
+#: inc/class-attributes.php:400
+msgid "When enabled, available swatches will be displayed in the catalog listing for each product."
+msgstr ""
+
+#: inc/class-attributes.php:415
+msgid "Catalog Swatch Method"
+msgstr ""
+
+#: inc/class-attributes.php:416
+msgid "What should happen when a user clicks on the swatch in the catalog."
+msgstr ""
+
+#: inc/class-attributes.php:421
+msgid "Link to Product"
+msgstr ""
+
+#: inc/class-attributes.php:422
+msgid "Change Product Image"
+msgstr ""
+
+#: inc/class-attributes.php:433
+msgid "Groups"
+msgstr ""
+
+#: inc/class-attributes.php:434
+msgid "Enter group labels into the field and press enter or select from the dropdown."
+msgstr ""
+
+#: inc/class-attributes.php:702
+msgid "Swatch"
+msgstr ""
+
+#: inc/class-attributes.php:708, inc/class-swatches.php:156
+msgid "Group"
+msgstr ""
+
+#: inc/class-helpers.php:78
+msgid "W"
+msgstr ""
+
+#: inc/class-helpers.php:78
+msgid "H"
+msgstr ""
+
+#: inc/class-licence.php:91
+msgid "Manage Licence &amp; Billing"
+msgstr ""
+
+#: inc/class-licence.php:98
+msgid "Create Support Ticket"
+msgstr ""
+
+#: inc/class-licence.php:114
+msgid "Back to Settings"
+msgstr ""
+
+#: inc/class-licence.php:140
+msgid "Changelog"
+msgstr ""
+
+#: inc/class-products.php:52
+msgid "Swatches"
+msgstr ""
+
+#: inc/class-settings.php:101
+msgid "Welcome to WooCommerce Attribute Swatches"
+msgstr ""
+
+#: inc/class-settings.php:102
+msgid "You're awesome! We've been looking forward to having you on board, and we're pleased to see the day has finally come."
+msgstr ""
+
+#: inc/class-settings.php:103
+msgid "Make yourself at home. If you get stuck, check out the <a href=\"%s\" target=\"_blank\">documentation</a>."
+msgstr ""
+
+#: inc/class-settings.php:112
+msgid "Read Documentation"
+msgstr ""
+
+#: inc/class-swatches.php:31, inc/class-swatches.php:397
+msgid "Colour Swatch"
+msgstr ""
+
+#: inc/class-swatches.php:64, inc/class-swatches.php:396
+msgid "Image Swatch"
+msgstr ""
+
+#: inc/class-swatches.php:84
+msgid "Upload/Add Image"
+msgstr ""
+
+#: inc/class-swatches.php:84
+msgid "Insert Image"
+msgstr ""
+
+#: inc/class-swatches.php:84
+msgid "Remove Image"
+msgstr ""
+
+#: inc/class-swatches.php:148
+msgid "Select a group..."
+msgstr ""
+
+#: inc/class-swatches.php:398
+msgid "Text Swatch"
+msgstr ""
+
+#: inc/class-swatches.php:399
+msgid "Radio Buttons"
+msgstr ""
+
+#: inc/admin/product-tab.php:79
+msgid "Before you can modify swatches, you need to add some attributes for variations on the <strong>Attributes</strong> tab. Once you've saved your product, you can come back here!"
+msgstr ""
+
+#: inc/admin/settings.php:21
+msgid "Dashboard"
+msgstr ""
+
+#: inc/admin/settings.php:25
+msgid "Style"
+msgstr ""
+
+#: inc/admin/settings.php:39
+msgid "Welcome"
+msgstr ""
+
+#: inc/admin/settings.php:48
+msgid "License & Account Settings"
+msgstr ""
+
+#: inc/admin/settings.php:54
+msgid "License &amp; Billing"
+msgstr ""
+
+#: inc/admin/settings.php:55
+msgid "Activate or sync your license, cancel your subscription, print invoices, and manage your account information."
+msgstr ""
+
+#: inc/admin/settings.php:64, inc/admin/settings.php:70
+msgid "Support"
+msgstr ""
+
+#: inc/admin/settings.php:71
+msgid "Get premium support with a valid license."
+msgstr ""
+
+#: inc/admin/settings.php:77
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/settings.php:78
+msgid "Read the plugin documentation."
+msgstr ""
+
+#: inc/admin/settings.php:87
+msgid "General"
+msgstr ""
+
+#: inc/admin/settings.php:92
+msgid "Selected Style"
+msgstr ""
+
+#: inc/admin/settings.php:97
+msgid "Tick"
+msgstr ""
+
+#: inc/admin/settings.php:98
+msgid "Border"
+msgstr ""
