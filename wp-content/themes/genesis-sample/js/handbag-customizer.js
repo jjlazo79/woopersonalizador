@@ -14,12 +14,16 @@ jQuery(document).ready(function() {
     //     jQuery('.variations .value').hide();
     //     jQuery(this).next('.value').css('display', 'inline-block');
     // });
+
+
+
     //First hide elements
     jQuery('.variations .label label').hide();
     jQuery('.variations .value').hide();
     jQuery('.iconic-was-swatches__item').hide();
     // Show first level
-    jQuery('.select-zone button').click(function() {
+    jQuery('.select-zone .seccion_imagen').click(function() {
+        jQuery(this).addClass('selected');
         jQuery('.variations .value').hide('slow');
         jQuery('.iconic-was-swatches__item').hide('slow');
         var elemento = jQuery(this).attr('id');

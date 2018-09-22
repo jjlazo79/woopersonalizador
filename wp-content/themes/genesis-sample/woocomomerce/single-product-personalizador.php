@@ -66,7 +66,7 @@ function gencwooc_single_product_loop() {
             <div id="configurator" class="col-sm-3">
                 <div class="js-choice">
                     <h3 class="title-gray text-center">Personaliza tu plantilla</h3>
-                    <div class="select-zone">
+                    <div class="select-zone row">
                         <?php
                         global $product;
                         $attributes = $product->get_attributes();
@@ -74,11 +74,15 @@ function gencwooc_single_product_loop() {
                             $attribute_name  = $attribute->get_taxonomy(); // The taxonomy slug name
                             $attribute_terms = $attribute->get_terms(); // The terms
                             $attribute_slugs = $attribute->get_slugs(); // The term slugs
+
+                            $attribute_icon = get_field('icon_'.$attribute_name);
                             // echo '<pre>';
                             // var_dump( $attribute ) );
                             // echo '</pre>';
 
-                            echo '<button id="' . $attribute_name . '">' . wc_attribute_label( $attribute_name ) . '</button>';
+                            echo '<span class="col-3 seccion_imagen" id="' . $attribute_name . '">
+                            <img src="' . $attribute_icon . '">
+                            ' . wc_attribute_label( $attribute_name ) . '</span>';
                         endforeach;
                         ?>
                         <h4>Aplica un color y/o material</h4>
@@ -135,7 +139,7 @@ function gencwooc_single_product_loop() {
                         <hr>
                         <div class="separator">
                             <p>PVP</p>
-                            <p>+ gastos de envío</p>
+                            <p>+ gastos de envÃ­o</p>
                         </div>
                         <?php echo woocommerce_template_single_price(); ?>
                 </div>
