@@ -65,24 +65,15 @@ function gencwooc_single_product_loop() {
 
             <div id="configurator" class="col-sm-3">
                 <div class="js-choice">
-                    <h3 class="title-gray text-center">Personaliza tu plantilla</h3>
+                    <h3 class="title-gray text-center">1.-Personaliza tu plantilla</h3>
                     <div class="select-zone row">
                         <?php
                         global $product;
                         $attributes = $product->get_attributes();
                         foreach ( $attributes as $attribute ):
                             $attribute_name  = $attribute->get_taxonomy(); // The taxonomy slug name
-                            $attribute_terms = $attribute->get_terms(); // The terms
-                            $attribute_slugs = $attribute->get_slugs(); // The term slugs
-
                             $attribute_icon = get_field('icon_'.$attribute_name);
-                            // echo '<pre>';
-                            // var_dump( $attribute ) );
-                            // echo '</pre>';
-
-                            echo '<span class="col-3 seccion_imagen" id="' . $attribute_name . '">
-                            <img src="' . $attribute_icon . '">
-                            ' . wc_attribute_label( $attribute_name ) . '</span>';
+                            echo '<span class="col-3 seccion_imagen" id="' . $attribute_name . '"><img src="' . $attribute_icon . '"></span>';
                         endforeach;
                         ?>
                         <h4>Aplica un color y/o material</h4>
@@ -124,15 +115,21 @@ function gencwooc_single_product_loop() {
                         <div class="js-choice">
                             <h3 class="title-gray">Tu modelo</h3>
                             <?php echo woocommerce_template_single_title(); ?>
-                            <div class="js-list-parts row">
+                            <div class="js-list-parts row text-left">
                                 <?php
                                     global $product;
                                     $attributes = $product->get_attributes();
                                     foreach ( $attributes as $attribute ):
                                         $attribute_name  = $attribute->get_taxonomy(); // The taxonomy slug name
-                                        echo '<div class="col-12">' . wc_attribute_label( $attribute_name ) . ' <span id="js-selected-' . $attribute_name . '"></span></div><br>';
+                                        $attribute_icon = get_field('icon_'.$attribute_name);
+
+                                        echo '<div class="col-12"><img src="' . $attribute_icon . '"> <span id="js-selected-' . $attribute_name . '"></span></div><br>';
                                     endforeach;
                                 ?>
+                                <div id="js-stamped-text-selected-container" class="col-12 d-none">
+                                    <h3>Tu texto</h3>
+                                    <p id="js-stamped-text-selected"></p>
+                                </div>
                             </div>
                         </div>
                         <hr>
@@ -141,6 +138,9 @@ function gencwooc_single_product_loop() {
                             <p>+ gastos de envío</p>
                         </div>
                         <?php echo woocommerce_template_single_price(); ?>
+                        <div id="js-ad-to-cart">
+
+                        </div>
                 </div>
             </div>
 

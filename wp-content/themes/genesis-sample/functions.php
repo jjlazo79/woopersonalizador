@@ -91,19 +91,13 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_style(
 		'bootstrap-style',
-		'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css',
-		array(),
-		CHILD_THEME_VERSION,
-		true
-	);
+		get_stylesheet_directory_uri() . '/css/bootstrap.min.css'
+		);
 
 	wp_enqueue_script(
 		'bootstrap-script',
-		'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
-		array(),
-		CHILD_THEME_VERSION,
-		true
-	);
+		get_stylesheet_directory_uri() . '/js/bootstrap.min.js'
+		);
 
 }
 
@@ -319,3 +313,77 @@ function custom_single_product_template_include( $template ) {
    return $template;
 }
 add_filter( 'template_include', 'custom_single_product_template_include', 50, 1 );
+
+
+/**
+ * Add timbrado
+ * @return [type] [description]
+ */
+function wdm_add_custom_fields() {
+	global $product;
+	ob_start();
+	?>
+		<h3 class="title-gray text-center js-toggle-next">2.-Añade un texto dentro</h3>
+		<div id="stamped-text" style="display:none;">
+			<label>Introduce tu texto
+				<input class="stamped-text-input" type="text" name="wp_stamped" placeolder="Te quiero">
+			</label>
+		</div>
+		<div class="clear"></div>
+	<?php
+	$content = ob_get_contents();
+	ob_end_flush();
+	return $content;
+}
+add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');
+
+
+/**
+ * Add custom data to Cart
+ * @param  [type] $cart_item_data [description]
+ * @param  [type] $product_id     [description]
+ * @param  [type] $variation_id   [description]
+ * @return [type]                 [description]
+ */
+function wdm_add_item_data($cart_item_data, $product_id, $variation_id) {
+	if(isset($_REQUEST['wp_stamped'])) {
+		$cart_item_data['wp_stamped'] = sanitize_text_field($_REQUEST['wp_stamped']);
+	}
+	return $cart_item_data;
+}
+add_filter('woocommerce_add_cart_item_data','wdm_add_item_data',10,3);
+
+
+/**
+ * Display information as Meta on Cart page
+ * @param  [type] $item_data [description]
+ * @param  [type] $cart_item [description]
+ * @return [type]            [description]
+ */
+function wdm_add_item_meta($item_data, $cart_item) {
+	if(array_key_exists('wp_stamped', $cart_item)) {
+		$custom_details = $cart_item['wp_stamped'];
+
+		$item_data[] = array(
+			'key'   => 'Stamped',
+			'value' => $custom_details
+		);
+	}
+	return $item_data;
+}
+add_filter('woocommerce_get_item_data','wdm_add_item_meta',10,2);
+
+/**
+ * Add Custom Details as Order Line Items
+ * @param  [type] $item..........[description]
+ * @param  [type] $cart_item_key [description]
+ * @param  [type] $values  ......[description]
+ * @param  [type] $order   ......[description]
+ * @return [type]                [description]
+ */
+function wdm_add_custom_order_line_item_meta($item, $cart_item_key, $values, $order) {
+	if(array_key_exists('wp_stamped', $values)) {
+		$item->add_meta_data('_wp_stamped',$values['wp_stamped']);
+	}
+}
+add_action( 'woocommerce_checkout_create_order_line_item', 'wdm_add_custom_order_line_item_meta',10,4 );

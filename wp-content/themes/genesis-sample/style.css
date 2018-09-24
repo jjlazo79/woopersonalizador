@@ -1165,17 +1165,16 @@ img.alignright,
 }
 
 .iconic-was-swatches__label:hover {
-    opacity: 0.8;
-}
-
-#view_sections span.seccion_imagen {
-    display: inline-block;
-    margin-right: 5px;
     opacity: 0.5;
 }
 
-#view_sections span.seccion_imagen:hover,
-div#view_sections span.seccion_imagen.selected {
+.js-choice span.seccion_imagen {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.js-choice span.seccion_imagen:hover,
+div.js-choice span.seccion_imagen.selected {
     opacity: 1;
 }
 
