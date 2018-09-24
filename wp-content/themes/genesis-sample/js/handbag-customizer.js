@@ -36,4 +36,9 @@ jQuery(document).ready(function() {
         jQuery('.iconic-was-swatches__item').hide();
         jQuery(this).nextUntil('.iconic-was-swatches__label').css('display', 'inline-block');
     });
+    // Get select values and draw in this correct place
+    jQuery('.select').on('change', function() {
+        var selectedValue = jQuery(this).val();
+        jQuery('#js-selected-' + attribute_name).html(selectedValue);
+    });
 });

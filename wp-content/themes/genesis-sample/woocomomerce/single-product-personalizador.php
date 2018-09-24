@@ -130,7 +130,6 @@ function gencwooc_single_product_loop() {
                                     $attributes = $product->get_attributes();
                                     foreach ( $attributes as $attribute ):
                                         $attribute_name  = $attribute->get_taxonomy(); // The taxonomy slug name
-
                                         echo '<div class="col-12">' . wc_attribute_label( $attribute_name ) . ' <span id="js-selected-' . $attribute_name . '"></span></div><br>';
                                     endforeach;
                                 ?>
@@ -139,7 +138,7 @@ function gencwooc_single_product_loop() {
                         <hr>
                         <div class="separator">
                             <p>PVP</p>
-                            <p>+ gastos de envÃ­o</p>
+                            <p>+ gastos de env�o</p>
                         </div>
                         <?php echo woocommerce_template_single_price(); ?>
                 </div>
