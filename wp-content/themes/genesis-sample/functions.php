@@ -326,20 +326,22 @@ add_filter( 'template_include', 'custom_single_product_template_include', 50, 1 
  */
 function wdm_add_custom_fields() {
 	global $product;
-	ob_start();
-	?>
-		<h3 class="title-bg-black text-center js-toggle-next">2.-Personaliza el interior</h3>
-		<div id="stamped-text" style="display:none;">
-			<label>TEXTO BORDADO INTERIOR
-				<small>LÃ­mite 140 caracteres</small>
-				<input class="stamped-text-input" type="text" name="wp_stamped" placeholder="Introduce aquÃ­ tu texto a bordar" maxlength="140">
-			</label>
-		</div>
-		<div class="clear"></div>
-	<?php
-	$content = ob_get_contents();
-	ob_end_flush();
-	return $content;
+	if ( get_field('fee_stamp', $product->ID ) ) {
+		ob_start();
+		?>
+			<h3 class="title-bg-black text-center js-toggle-next">2.-Personaliza el interior</h3>
+			<div id="stamped-text" style="display:none;">
+				<label>TEXTO BORDADO INTERIOR
+					<small>Límite 140 caracteres</small>
+					<input class="stamped-text-input" type="text" name="wp_stamped" placeholder="Introduce aquí tu texto a bordar" maxlength="140">
+				</label>
+			</div>
+			<div class="clear"></div>
+		<?php
+		$content = ob_get_contents();
+		ob_end_flush();
+		return $content;
+	}
 }
 add_action('woocommerce_before_add_to_cart_button','wdm_add_custom_fields');
 
