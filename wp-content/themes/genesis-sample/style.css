@@ -1,82 +1,18 @@
 /*
-	Theme Name: Genesis Sample
-	Theme URI: https://demo.studiopress.com/
-	Description: This is the sample theme created for the Genesis Framework.
-	Author: StudioPress
+	Theme Name: BYOB
+	Theme URI: isagomez.com
+	Description: BYOB Eccoommerce Child Theme Genesis.
+	Author: IsaGomez.com
 	Author URI: https://www.studiopress.com/
 
-	Version: 2.6.0
-
-	Tags: one-column, two-columns, left-sidebar, right-sidebar, accessibility-ready, custom-colors, custom-logo, custom-menu, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+	Version: 0.1
 
 	Template: genesis
 
 	License: GPL-2.0+
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-	Text Domain: genesis-sample
-*/
 
-
-/* Table of Contents
-- HTML5 Reset
-	- Baseline Normalize
-	- Box Sizing
-	- Float Clearing
-- Defaults
-	- Typographical Elements
-	- Headings
-	- Objects
-	- Gallery
-	- Forms
-	- Tables
-	- Screen Reader Text
-- Structure and Layout
-	- Site Container
-	- Site Inner
-- Common Classes
-	- Avatar
-	- Genesis
-	- Search Form
-	- Titles
-	- WordPress
-- Widgets
-	- Featured Content
-- Plugins
-	- Genesis eNews Extended
-	- Genesis Simple FAQ
-	- Jetpack
-	- Iconic
-- Skip Links
-- Site Header
-	- Title Area
-- Site Navigation
-	- Responsive Menu
-	- Header Menu
-	- Footer Menu
-- Content Area
-	- Entry Content
-	- Entry Meta
-	- Pagination
-	- Entry Comments
-- Sidebar
-- Footer Widgets
-- Site Footer
-- Media Queries
-	- Min-width: 960px
-		- Site Header
-		- Genesis Menu
-		- Responsive Menu
-		- Header Menu
-		- Site Inner
-		- Content
-		- Sidebar
-		- Author Box
-		- After Entry
-		- Column Classes
-		- Entry Misc.
-		- Footer Widgets
-- Print Styles
 */
 
 
@@ -340,7 +276,7 @@ body>div {
 body {
     background-color: #fff;
     color: #333;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Merriweather', serif;
     font-size: 18px;
     font-size: 1.8rem;
     font-weight: 400;
@@ -360,7 +296,7 @@ textarea:focus,
 }
 
 a {
-    color: #0073e5;
+    color: #cdb938;
     text-decoration: underline;
     transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
@@ -436,7 +372,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     line-height: 1.2;
     margin: 0 0 20px;
@@ -642,7 +578,7 @@ input[type="submit"]:focus,
 input[type="submit"]:hover,
 .button:focus,
 .button:hover {
-    background-color: #0073e5;
+    background-color: #cdb938;
     color: #fff;
 }
 
@@ -806,28 +742,6 @@ th:first-child {
 ---------------------------------------------------------------------------------------------------- */
 
 
-/* Avatar
---------------------------------------------- */
-
-.avatar {
-    border-radius: 50%;
-    float: left;
-}
-
-.author-box .avatar,
-.alignleft .avatar {
-    margin-right: 20px;
-}
-
-.alignright .avatar {
-    margin-left: 20px;
-}
-
-.comment .avatar {
-    margin: 0 15px 20px 0;
-}
-
-
 /* Genesis
 --------------------------------------------- */
 
@@ -914,7 +828,7 @@ th:first-child {
 
 .entry-title a:focus,
 .entry-title a:hover {
-    color: #0073e5;
+    color: #cdb938;
 }
 
 .widget-title {
@@ -1120,7 +1034,7 @@ img.alignright,
 .gs-faq__question:focus,
 .gs-faq__question:hover {
     background: transparent;
-    color: #0073e5;
+    color: #cdb938;
 }
 
 .gs-faq__question::after {
@@ -1134,19 +1048,11 @@ img.alignright,
 }
 
 
-/* Jetpack
---------------------------------------------- */
-
-#wpstats {
-    display: none;
-}
-
-
 /* Iconic
 --------------------------------------------- */
 
 #product-image .iconic-woothumbs-all-images-wrap {
-    display: none;
+    width: 100%;
 }
 
 #product-image .iconic-pc-images {
@@ -1154,8 +1060,8 @@ img.alignright,
     float: none;
 }
 
-.title-gray {
-    background-color: lightgray;
+.title-bg-black {
+    background-color: #000;
     padding: 15px;
     color: #fff;
 }
@@ -1168,14 +1074,36 @@ img.alignright,
     opacity: 0.5;
 }
 
+.product_cat-personalizador .variations_form.cart {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .js-choice span.seccion_imagen {
     opacity: 0.5;
     cursor: pointer;
+    padding: 5px;
+    text-align: center;
 }
 
 .js-choice span.seccion_imagen:hover,
 div.js-choice span.seccion_imagen.selected {
     opacity: 1;
+}
+
+.woocommerce .col-1,
+.woocommerce .col-2 {
+    max-width: none;
+}
+
+.border-b {
+    border-bottom: solid 1px;
+    margin: 10px auto;
+}
+
+.border-t {
+    border-top: solid 1px;
+    margin: 10px auto;
 }
 
 
@@ -1210,9 +1138,9 @@ div.js-choice span.seccion_imagen.selected {
 ---------------------------------------------------------------------------------------------------- */
 
 .site-header {
-    background-color: #fff;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
-    padding: 0 30px;
+    margin: 2% auto;
+    padding: 0;
+    width: 100%;
 }
 
 
@@ -1220,23 +1148,28 @@ div.js-choice span.seccion_imagen.selected {
 --------------------------------------------- */
 
 .title-area {
-    float: left;
-    padding-bottom: 25px;
-    padding-top: 25px;
+    float: none;
+    padding: 30px;
+    text-align: center;
 }
 
 .wp-custom-logo .title-area {
-    max-width: 350px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+ 	float: none;
+    margin-top: 60px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+
 }
 
 .site-title {
-    font-size: 20px;
-    font-size: 2rem;
+
+    font-size: 42px;
+    letter-spacing: .1em;
+    line-height: 1.3;
+    font-family: poppins;
     font-weight: 600;
-    line-height: 1;
-    margin-bottom: 0;
+
 }
 
 .site-title a,
@@ -1245,8 +1178,14 @@ div.js-choice span.seccion_imagen.selected {
     color: #333;
     text-decoration: none;
 }
+.site-description{
+	 font-size: 10px;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+	
+}
 
-.site-description,
+
 .wp-custom-logo .site-title {
     border: 0;
     clip: rect(0, 0, 0, 0);
@@ -1290,7 +1229,7 @@ div.js-choice span.seccion_imagen.selected {
 .genesis-nav-menu .current-menu-item>a,
 .genesis-nav-menu .sub-menu .current-menu-item>a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item>a:hover {
-    color: #0073e5;
+    color: #cdb938;
     text-decoration: none;
 }
 
@@ -1366,7 +1305,7 @@ div.js-choice span.seccion_imagen.selected {
 .sub-menu-toggle:hover {
     background-color: transparent;
     border-width: 0;
-    color: #0073e5;
+    color: #cdb938;
 }
 
 .menu-toggle {
@@ -1424,8 +1363,25 @@ div.js-choice span.seccion_imagen.selected {
 --------------------------------------------- */
 
 .nav-primary {
-    clear: left;
+     background: #fff;
+    position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 999;
+    text-align: center;
+	font-family: Poppins;
+	font-size: 19px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #333333;
+	text-transform: uppercase;
+	
+    
+
+    
 }
 
 
@@ -1639,7 +1595,7 @@ p.entry-meta {
 ---------------------------------------------------------------------------------------------------- */
 
 .footer-widgets {
-    border-top: 1px solid #eee;
+
     background-color: #fff;
     clear: both;
     font-size: 18px;
@@ -1669,17 +1625,115 @@ p.entry-meta {
 
 .site-footer {
     background-color: #fff;
-    border-top: 1px solid #eee;
     font-size: 15px;
     font-size: 1.5rem;
     line-height: 1.5;
     padding: 30px;
     text-align: center;
+    
 }
 
 .site-footer p {
     margin-bottom: 0;
+    font-family: Poppins;
+	font-size: 19px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.26;
+	letter-spacing: normal;
+	text-align: center;
+	color: #000;
+	text-transform: uppercase;
 }
+
+
+
+/* Custom Styles 
+---------------------------------------------------------------------------------------------------- */
+
+
+/* Widget área - Footer
+------------------ */
+
+
+.footer_contacto{
+	
+ font-family: Poppins;
+  font-size: 19px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+
+	
+}
+
+
+.menu-menu_footer-container a{
+	 font-family: Poppins;
+  font-size: 19px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+
+}
+
+
+/* Home
+------------------ */
+
+.home .site-inner{
+	margin: 0 auto;
+    padding: 0px 30px 0;
+}
+
+
+.bloc-superior-title {
+    display: table;
+    height: 50%;
+    text-align: center;
+    padding: 5% 4%;
+
+  
+}
+
+
+.bloc-superior-title h1{
+   font-family: "Poppins", sans-serif;
+   font-size: 42px;
+   font-weight: 500;
+   line-height: 1.25;
+    color: #333;
+ 	width: 100%;
+    padding: 40% 0;
+    text-align: center;
+ 
+}
+
+  
+  
+  
+
+.bloc-superior-small-image{
+
+    display: table;
+    height: 50%;
+}
+   
+   
+   
+.bloc-superior-title .button{
+	 background-color: #cdb938;
+} 
+
 
 
 /* Media Queries
@@ -1689,9 +1743,9 @@ p.entry-meta {
     /* Site Header
 	--------------------------------------------- */
     .site-header {
-        position: fixed;
-        width: 100%;
-        z-index: 9999;
+       margin: 2% auto;
+	   padding: 0;
+	   width: 100%;
     }
     /* Genesis Menu
 	--------------------------------------------- */
@@ -1716,7 +1770,7 @@ p.entry-meta {
     }
     .genesis-nav-menu>.menu-highlight>a:hover,
     .genesis-nav-menu>.menu-highlight>a:focus {
-        background-color: #0073e5;
+        background-color: #cdb938;
     }
     .genesis-responsive-menu .genesis-nav-menu .sub-menu,
     .genesis-responsive-menu .genesis-nav-menu .sub-menu a {
@@ -1752,10 +1806,15 @@ p.entry-meta {
     /* Header Menu
 	--------------------------------------------- */
     .nav-primary {
-        clear: none;
-        float: right;
-        width: auto;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    padding: 20px 30px;
     }
+    
     .nav-primary .genesis-nav-menu a {
         padding-left: 15px;
         padding-right: 15px;
@@ -1872,127 +1931,5 @@ p.entry-meta {
         width: 33.33%;
         /* fallback for older browsers */
         width: calc(100% / 3);
-    }
-}
-
-
-/* Print Styles
----------------------------------------------------------------------------------------------------- */
-
-@media print {
-    *,
-    *::before,
-    *::after {
-        background: transparent !important;
-        box-shadow: none !important;
-        color: #333 !important;
-        text-shadow: none !important;
-    }
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-    a[href]::after {
-        content: " (" attr(href) ")";
-    }
-    abbr[title]::after {
-        content: " (" attr(title) ")";
-    }
-    a[href^="javascript:"]::after,
-    a[href^="#"]::after,
-    .site-title>a::after {
-        content: "";
-    }
-    thead {
-        display: table-header-group;
-    }
-    img,
-    tr {
-        page-break-inside: avoid;
-    }
-    img {
-        max-width: 100% !important;
-    }
-    @page {
-        margin: 2cm 0.5cm;
-    }
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-    blockquote,
-    pre {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-    .content,
-    .content-sidebar {
-        width: 100%;
-    }
-    button,
-    input,
-    select,
-    textarea,
-    .breadcrumb,
-    .comment-edit-link,
-    .comment-form,
-    .comment-list .reply a,
-    .comment-reply-title,
-    .edit-link,
-    .entry-comments-link,
-    .entry-footer,
-    .genesis-box,
-    .header-widget-area,
-    .hidden-print,
-    .home-top,
-    .nav-primary,
-    .nav-secondary,
-    .post-edit-link,
-    .sidebar {
-        display: none !important;
-    }
-    .title-area {
-        text-align: center;
-        width: 100%;
-    }
-    .site-title>a {
-        margin: 0;
-        text-decoration: none;
-        text-indent: 0;
-    }
-    .site-inner {
-        padding-top: 0;
-        position: relative;
-        top: -100px;
-    }
-    .author-box {
-        margin-bottom: 0;
-    }
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        orphans: 3;
-        page-break-after: avoid;
-        page-break-inside: avoid;
-        widows: 3;
-    }
-    img {
-        page-break-after: avoid;
-        page-break-inside: avoid;
-    }
-    blockquote,
-    pre,
-    table {
-        page-break-inside: avoid;
-    }
-    dl,
-    ol,
-    ul {
-        page-break-before: avoid;
     }
 }

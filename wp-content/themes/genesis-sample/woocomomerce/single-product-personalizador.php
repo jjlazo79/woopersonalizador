@@ -42,7 +42,33 @@ add_action( 'genesis_loop', 'gencwooc_single_product_loop' );
  */
 function gencwooc_single_product_loop() {
 
-	do_action( 'woocommerce_before_main_content' );
+    do_action( 'woocommerce_before_main_content' );
+
+        $productTerms = get_the_terms( $post->ID, 'product_cat' );
+
+        $args = array(
+            'post_type' => 'product',
+            'product_cat' => $productTerms[0]->slug,
+            'orderby' => 'rand'
+        );
+        $loop = new WP_Query( $args ); ?>
+        <div class="container">
+            <h3 class="text-center">Elige tu modelo</h3>
+            <nav class="row justify-content-md-center border-t border-b">
+                <div class="wrap">
+                    <ul class="menu genesis-nav-menu">
+                    <?php while ( $loop->have_posts() ) : $loop->the_post(); global $product; ?>
+                        <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                            <a class="col" href="<?php the_permalink(); ?>" itemprop="url">
+                                <span itemprop="name"><?php the_title(); ?></span>
+                            </a>
+                        </li>
+                    <?php endwhile; ?>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <?php wp_reset_query();
 
 	// Let developers override the query used, in case they want to use this function for their own loop/wp_query
 	$wc_query = false;
@@ -65,15 +91,16 @@ function gencwooc_single_product_loop() {
 
             <div id="configurator" class="col-sm-3">
                 <div class="js-choice">
-                    <h3 class="title-gray text-center">1.-Personaliza tu plantilla</h3>
+                    <h3 class="title-bg-black text-center">1.-Personaliza tu plantilla</h3>
                     <div class="select-zone row">
                         <?php
                         global $product;
                         $attributes = $product->get_attributes();
                         foreach ( $attributes as $attribute ):
                             $attribute_name  = $attribute->get_taxonomy(); // The taxonomy slug name
-                            $attribute_icon = get_field('icon_'.$attribute_name);
-                            echo '<span class="col-3 seccion_imagen" id="' . $attribute_name . '"><img src="' . $attribute_icon . '"></span>';
+                            $attribute_icon  = get_field('icon_'.$attribute_name);
+                            $attribute_label = strip_tags(wc_attribute_label($attribute_name));
+                            echo '<span class="col-6 col-sm-6 col-lg-3 seccion_imagen" id="' . $attribute_name . '"><img data-toggle="tooltip" data-placement="bottom" data-html="true" title="<h4>'.$attribute_label.'</h4>" src="' . $attribute_icon . '"></span>';
                         endforeach;
                         ?>
                         <h4>Aplica un color y/o material</h4>
@@ -113,22 +140,27 @@ function gencwooc_single_product_loop() {
 
                         ?>
                         <div class="js-choice">
-                            <h3 class="title-gray">Tu modelo</h3>
+                            <h3 class="title-bg-black">Tu modelo</h3>
                             <?php echo woocommerce_template_single_title(); ?>
                             <div class="js-list-parts row text-left">
                                 <?php
                                     global $product;
                                     $attributes = $product->get_attributes();
                                     foreach ( $attributes as $attribute ):
-                                        $attribute_name  = $attribute->get_taxonomy(); // The taxonomy slug name
+                                        $attribute_name = $attribute->get_taxonomy(); // The taxonomy slug name
                                         $attribute_icon = get_field('icon_'.$attribute_name);
 
                                         echo '<div class="col-12"><img src="' . $attribute_icon . '"> <span id="js-selected-' . $attribute_name . '"></span></div><br>';
                                     endforeach;
                                 ?>
+                                <div class="clear"></div>
                                 <div id="js-stamped-text-selected-container" class="col-12 d-none">
-                                    <h3>Tu texto</h3>
-                                    <p id="js-stamped-text-selected"></p>
+                                    <br>
+                                    <h3>Tu texto para el interior</h3>
+                                    <p id="js-stamped-text-selected" style="border: dashed 1px; padding: 5px;"></p>
+                                    <div id="js-stamped-text-notice" class="alert alert-info text-center" role="alert">
+                                        <p>Este bordado tiene un sobrecoste de <?php echo get_field( 'fee_stamp' ); ?> €.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -164,6 +196,11 @@ function gencwooc_single_product_loop() {
 	endwhile;
 
 	do_action( 'woocommerce_after_main_content' );
+} ?>
+<style>
+.single_variation_wrap .price {
+    display: none;
 }
-
+</style>
+<?php
 genesis();

@@ -89,15 +89,20 @@ function genesis_sample_enqueue_scripts_styles() {
 		true
 	);
 
+	wp_enqueue_script(
+		'popper',
+		get_stylesheet_directory_uri() . '/lib/woocommerce/js/popper.min.js'
+	);
+
 	wp_enqueue_style(
 		'bootstrap-style',
 		get_stylesheet_directory_uri() . '/css/bootstrap.min.css'
-		);
+	);
 
 	wp_enqueue_script(
 		'bootstrap-script',
 		get_stylesheet_directory_uri() . '/js/bootstrap.min.js'
-		);
+	);
 
 }
 
@@ -323,10 +328,11 @@ function wdm_add_custom_fields() {
 	global $product;
 	ob_start();
 	?>
-		<h3 class="title-gray text-center js-toggle-next">2.-Añade un texto dentro</h3>
+		<h3 class="title-bg-black text-center js-toggle-next">2.-Personaliza el interior</h3>
 		<div id="stamped-text" style="display:none;">
-			<label>Introduce tu texto
-				<input class="stamped-text-input" type="text" name="wp_stamped" placeolder="Te quiero">
+			<label>TEXTO BORDADO INTERIOR
+				<small>Límite 140 caracteres</small>
+				<input class="stamped-text-input" type="text" name="wp_stamped" placeholder="Introduce aquí tu texto a bordar" maxlength="140">
 			</label>
 		</div>
 		<div class="clear"></div>
@@ -365,7 +371,7 @@ function wdm_add_item_meta($item_data, $cart_item) {
 		$custom_details = $cart_item['wp_stamped'];
 
 		$item_data[] = array(
-			'key'   => 'Stamped',
+			'key'   => __( 'Texto bordado', 'genesis-sample' ),
 			'value' => $custom_details
 		);
 	}
@@ -387,3 +393,36 @@ function wdm_add_custom_order_line_item_meta($item, $cart_item_key, $values, $or
 	}
 }
 add_action( 'woocommerce_checkout_create_order_line_item', 'wdm_add_custom_order_line_item_meta',10,4 );
+
+
+/** add handling fee **/
+function df_add_handling_fee( $cart_object ) {
+
+	global $woocommerce;
+	$final_fee	= 0;
+	$fee		= 0;
+	$qty		= 0;
+	//Getting Cart Contents.
+	$cart = $woocommerce->cart->get_cart();
+
+	foreach ( $cart_object->cart_contents as $key => $value ) {
+		// echo '<pre>'; var_dump($value); echo '</pre>';
+
+		$product_id = $value['product_id']; //get the product id from cart
+		$text_stamp = $value['wp_stamped'];
+		// Check if get stamp
+		if ( $text_stamp ) {
+			$fee	= get_field( 'fee_stamp', $product_id ) + $fee;
+			$qty	= $value['quantity'] + $qty;
+		}
+
+	}
+
+	$final_fee	= $qty * $fee;
+
+	if( $final_fee > 0 ) {
+		$woocommerce->cart->add_fee( 'Bordado', $final_fee, true, 'standard' );
+	}
+
+}
+add_action( 'woocommerce_cart_calculate_fees', 'df_add_handling_fee' );
